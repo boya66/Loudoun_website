@@ -1,13 +1,11 @@
-### 2020 Fairfax County Summer Project {style=text-align:center}
+### 2020 Loudoun County Project {style=text-align:center}
 
-Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+We partnered with Virginia Cooperative Extension to identify areas where a potential food hub in Loudon County could alleviate food insecurity in northern Virginia.
 
 ### Project Goals {style=text-align:center}
 
-Example text: We're devising and assessing methods that make human populations more resilient not just during, but also before and after natural disasters. Among the topics we're studying are social isolation, social support structures, social vulnerability indices and various well-being indices.
+By identifying areas of food vulnerability and food outlets, we aim to help stakeholders identify neighborhoods where a Loudon County food hub could serve these populations.
 
 ### Our Approach {style=text-align:center}
 
-Example text: We study damage-inducing mechanisms such as wind, rain, storm surge and flooding. We model their effects on damage to interacting networks - infrastructure and human networks. Our main priority is to understand the interactions among utility infrastructures and how they impact human life.
-
-
+Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity. These data were used to construct a composite index of food insecurity at the census tract level. The composite index includes both demand and supply side factors influencing food security.  

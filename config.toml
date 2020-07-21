@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "UVA Biocomplexity Institute"
-description = "A website for University of Virginia's 2020 Data Science for the Public Good Program."
+title = "Virginia Tech"
+description = "A website for Virginia Tech's 2020 Data Science for the Public Good Program."
 theme = "min_night"
 disqusShortname = ""
 googleAnalytics = ""
@@ -13,9 +13,9 @@ publishDir = "docs"
 
 [params]
     author = "UVA Biocomplexity Institute"
-    description = "2020 DSPG Project Name"
+    description = "2020 DSPG VT Loudoun"
     logo = "favicon/uva-dspg-logo.jpg"
-    githubUsername = "uva-bi-sdad"
+    githubUsername = "boya66"
     accent = "#232D4B" # dark colors do best
     backgroundColor = "#FFFFFF"
     font = "Oxygen" # should match the name on Google Fonts!
@@ -59,7 +59,7 @@ publishDir = "docs"
     weight = 1
 
 [[menu.icon]]
-    url = "https://github.com/DSPG-Young-Scholars-Program"
+    url = "https://github.com/boya66/dspg2020Loudoun"
     name = "fab fa-github"
     weight = 2
 
@@ -69,5 +69,5 @@ publishDir = "docs"
     weight = 3
     
 [[menu.icon]]
-    url = "mailto:kb7hp@virginia.edu"
+    url = "boya66@vt.edu"
     name = "far fa-envelope"

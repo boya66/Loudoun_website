@@ -8,15 +8,24 @@
 
 ### DSPG Team Members {style=text-align:center}
 
-##### [Photos go about here.] {style=text-align:center}
 
-[Susweta Ray, Fellow (PhD Student at University of Nebraska-Lincoln, Agricultural Economics)](https://github.com/SuswetaRay), [Sarah McDonald, Intern (Marymount University, Mathematics)](https://github.com/sm9dv), [Owen Hart, Intern (University of California, Berkeley, Economics/Data Science)](https://github.com/hartowen), and [Sean Pietrowicz, Intern (Notre Dame, Mathematics)](https://github.com/sp3sd)
+![Boya Zhang](/images/Boya.Zhang.VT.jpg)  |  ![Adam Wells](/images/Adam Wells.VT.jpg)
+:-----------------------------------------:|:-----------------------------------------:
+[Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66)  |  [Adam Wells, Intern (master student at Virginia Tech, Data Analysis and Applied Statistics)]
+<br/><br/>
+
+![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG)  |  ![Talib Grant](/images/Talib.Grant.VT.jpg)
+:-----------------------------------------:|:-----------------------------------------:
+[Laura Pranteddu, Intern (master student at University of Trento, Data Science)](https://github.com/lp9kh)            |  [Talib Grant, Intern (undergraduate student at Virginia Tech, Data Analytics)](https://github.com/tkgrant)
+
+
+[comment]: <> ([Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66), [Adam Wells, Intern (master student at Virginia Tech, Data Analysis and Applied Statistics)](https://github.com/wellay01), [Laura Pranteddu, Intern (master student at University of Trento, Data Science)](https://github.com/lp9kh), and [Talib Grant, Intern (undergraduate student at Virginia Tech, Data Analytics)](https://github.com/tkgrant))
 
 ### UVA SDAD Team Members {style=text-align:center}
 
 ##### [Photos go about here.] {style=text-align:center} 
 
-[Teja Pristavec (Research Assistant Professor, DSPG Project Lead)](https://biocomplexity.virginia.edu/teja-pristavec), [Brandon Kramer (Postdocotral Research Associate)](https://biocomplexity.virginia.edu/brandon-kramer), [Josh Goldstein (Research Assistant Professor)](https://biocomplexity.virginia.edu/joshua-goldstein), [Joy Tobin (Principal Scientist)](https://biocomplexity.virginia.edu/joy-tobin), [Stephanie Shipp (Deputy Division Director, Research Professor)](https://biocomplexity.virginia.edu/stephanie-shipp), and [Sallie Keller (Division Director, Distinguished Professor)](https://biocomplexity.virginia.edu/sallie-keller)
+[Ford Ramsey (Assistant Professor at Virginia Tech, Agricultural & Applied Economics, DSPG Project Lead)](https://aaec.vt.edu/people/faculty/ramsey-ford.html), [Susan Chen (Associate Professor at Virginia Tech, Agricultural & Applied Economics)](https://aaec.vt.edu/people/faculty/chen-susan.html), [Conoway Haskins (Extension Specialist at Virginia Cooperative Extension)](https://ext.vt.edu/community-leadership/people/conaway-haskins.html)
 
 ### Project Sponsors/Stakeholders {style=text-align:center}
 
