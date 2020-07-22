@@ -15,7 +15,7 @@
 
 
 
-![Laura Pranteddu](/team_files/Laura.Pranteddu.VT.JPG)  |  ![Dylan Glover](/team_files/Dylan.Glover.VT.jpg)
+![Laura Pranteddu](/team_files/Laura.Pranteddu.VT.JPG)  |  ![Talib Grant](/team_files/Talib.Grant.VT.jpg)
 :-----------------------------------------:|:-----------------------------------------:
 [Laura Pranteddu, Intern (master student at University of Trento, Data Science)](https://github.com/lp9kh)            |  [Talib Grant, Intern (undergraduate student at Virginia Tech, Data Analytics)](https://github.com/tkgrant)
 
