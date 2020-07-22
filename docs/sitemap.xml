@@ -29,6 +29,11 @@
   </url>
   
   <url>
+    <loc>/readme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/team/</loc>
     <priority>0</priority>
   </url>

@@ -72,6 +72,16 @@ Our Approach Our research team used an interdisciplinary approach to combine dat
     
     <item>
       <title></title>
+      <link>/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/readme/</guid>
+      <description>Loudoun_website This repository contains the website for DSPG 2020 Loudoun county project
+To add contents  Edit .md files in content directory Edit config.toml to modify the home page add images in content/images  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
