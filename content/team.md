@@ -9,10 +9,11 @@
 ### DSPG Team Members {style=text-align:center}
 
 
-![Boya Zhang](/images/Boya.Zhang.VT.jpg)  |  ![Adam Wells](/images/Adam Wells.VT.jpg)
+![Boya Zhang](/images/Boya.Zhang.VT.jpg)  |  ![Adam Wells](/images/Adam.Wells.VT.jpg)
 :-----------------------------------------:|:-----------------------------------------:
-[Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66)  |  [Adam Wells, Intern (master student at Virginia Tech, Data Analysis and Applied Statistics)]
-<br/><br/>
+[Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66)        |  [Adam Wells, Intern (master student at Virginia Tech, Data Analysis and Applied Statistics)](https://github.com/wellay01)
+
+
 
 ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG)  |  ![Talib Grant](/images/Talib.Grant.VT.jpg)
 :-----------------------------------------:|:-----------------------------------------:
