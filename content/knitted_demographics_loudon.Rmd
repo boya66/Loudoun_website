@@ -1,0 +1,115 @@
+---
+title: "Social Vulnerability Index"
+output: html_document
+---
+
+The NoVA area is composed by:
+
+* City of Alexandria
++ Arlington County
++ City of Fairfax
++ Fairfax county
++ City of Falls Church
++ Fauquier County
++ Loudoun County
++ City of Manassas
++ City of Manassas Park
++ Prince William County
+
+
+The Social Vulnerability Index is created collecting several socioeconomic factors from the census tract data:  i.e. the poverty, ethnicity, spoken language, household composition and crowdness, disabilities when present, housing type and access to transportation in the area. 
+
+
+
+```{r, include=FALSE, echo = TRUE}
+
+library(rgdal)
+library(tidyverse)
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(tidycensus)
+myACSkey <- ""
+map  <- st_read("data/VirginiaShapeFiles/tl_2019_51_tract.shp", stringsAsFactors = FALSE)
+dataCDC <- read.csv("data/Virginia_CDC_SVI.csv")
+str(map)
+str(dataCDC)
+nova_counties  <- c("Arlington",
+                    "Fairfax",
+                    "Loudoun",
+                    "Prince William",
+                    "Alexandria City",
+                    "Falls Church City",
+                    "Fairfax City",
+                    "Manassas City",
+                    "Manassas Park City",
+                    "Fauquier")
+
+dataCDC_modified <- dataCDC %>%
+  filter(COUNTY %in% nova_counties ) %>%
+  separate(LOCATION, into = c("NAMELSAD", "State"), sep= ", ")
+
+map_and_data <- inner_join(map, dataCDC_modified, by="NAMELSAD")
+
+# str(map_and_data)
+
+map_and_data$RPL_THEMES[map_and_data$RPL_THEMES<0] <- NA
+
+# unique(map_and_data$RPL_THEMES)
+
+
+va_sf<-get_acs(geography = "county",
+               state="VA",
+               county=c("Arlington county",
+                        "Fairfax county",
+                        "Loudoun county",
+                        "Prince William county",
+                        "Alexandria city",
+                        "Falls Church city",
+                        "Fairfax city",
+                        "Manassas city",
+                        "Manassas Park city",
+                        "Fauquier County"),
+               variables = "B19058_002",
+               survey = "acs5",
+               key = myACSkey,
+               year=2018,
+               output = "wide",
+               show_call = T,
+               geometry = T,
+               keep_geo_vars = T)%>%
+  select(COUNTYFP,geometry)
+
+
+loudoun_outline<-get_acs(geography = "county",
+               state="VA",
+               county=c("Loudoun county"),
+               variables = "B19058_002",
+               survey = "acs5",
+               key = myACSkey,
+               year=2018,
+               output = "wide",
+               show_call = T,
+               geometry = T,
+               keep_geo_vars = T)%>%
+  select(COUNTYFP,geometry)
+
+```
+```{r plot, echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center"}
+ggplot(map_and_data) + 
+  geom_sf(aes(fill= RPL_THEMES)) +
+  geom_sf(data= va_sf, fill="transparent", color="black", size=.5) +
+  geom_sf(data=loudoun_outline, fill="transparent", color="red", size=.75) +
+  ylim(-38.4,-39.3) + xlim(-78.1, -77) + 
+  scale_fill_viridis_c() + scale_color_viridis_c() +
+  theme(legend.title = element_blank()) 
+```
+
+
+These socioeconomic and demographic factors affect the resilience of communities.
+The map shows the vulenrability distribution in the NoVA area, higher values show areas subjected to greater vulnerability.
+
+The SVI can be helpful to estimate the amount of needed supplies like food, identify areas in need of emergency shelters, identify communities that will need continued support to recover following an emergency, a natural disaster or a pandemic.
+
+CDC Social Vulnerability Index. Retrieved from: https://svi.cdc.gov/
+
