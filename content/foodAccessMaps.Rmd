@@ -1,0 +1,279 @@
+---
+title: "Food Accessibility Score"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+The relative food access variable is created by examining the distance between the major population and their distance to food retailers.  
+
+To find the center for each county population, the geometric center weighted by population density was used to determine geographic centers.  This data is available through the Census Bureau at various geographic levels. 
+
+
+Relative Food Access = $\frac{\sum_{}^{} \frac{1}{distance}}{population}$
+
+Per county in the project scope, food retailers only within a specified radius would contribute to the overall county score.  Additionally, the inverse distance of each food retailer to the center of each county weights the closer food retailers higher than those further away.
+
+Lastly, the food access variable is weighted by county population.
+
+```{r Food Access Data, eval = FALSE, include = FALSE, echo = TRUE}
+
+library(tidyverse)
+library(ggmap)
+library(leaflet)
+library(rgdal)
+library(sf)
+library(rgeos)
+library(stringr)
+library(geosphere)
+library(pracma)
+library(tidycensus)
+
+farmersMarkets_data <-
+  read.csv(
+    "C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/FoodAccessGeoLocData/FarmersMarket_NOVA_geoloc.csv",
+    header = T,
+    stringsAsFactors = F
+  )
+
+foodPantry_data <-
+  read.csv(
+    "C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/FoodAccessGeoLocData/FoodPantry_NOVA_geoloc.csv",
+    header = T,
+    stringsAsFactors = F
+  )
+
+foodRetailer_data <-
+  read.csv(
+    "C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/FoodAccessGeoLocData/FoodRetailers_NOVA_geoloc.csv",
+    header = T,
+    stringsAsFactors = F
+  )
+
+CenterPop_tract <-
+  read.csv(
+    "C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/CenPop2010_Mean_TR51.txt",
+    header = T
+  )
+
+map  <-
+  st_read(
+    "C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/VirginiaShapeFiles/tl_2019_51_tract.shp",
+    stringsAsFactors = FALSE
+  )
+
+NOVA_TRnames <- read.csv("C:/Users/Admin/Documents/DSPG/Loudoun/GitHub/dspg2020Loudon/data/NOVA_CensusTracts.csv",
+                          header=T, stringsAsFactors = F)
+
+myACSkey <- ""
+# Get County Outlines
+va_sf <- get_acs(
+  geography = "county",
+  state = "VA",
+  county = c(
+    "Arlington county",
+    "Fairfax county",
+    "Loudoun county",
+    "Prince William county",
+    "Alexandria city",
+    "Falls Church city",
+    "Fairfax city",
+    "Manassas city",
+    "Manassas Park city",
+    "Fauquier County"
+  ),
+  variables = "B19058_002",
+  survey = "acs5",
+  key = myACSkey,
+  year = 2018,
+  output = "wide",
+  show_call = T,
+  geometry = T,
+  keep_geo_vars = T
+) %>%
+  select(COUNTYFP, geometry)
+
+
+# Get Loudoun County Outline only
+loudoun_outline <- get_acs(
+  geography = "county",
+  state = "VA",
+  county = c("Loudoun county"),
+  variables = "B19058_002",
+  survey = "acs5",
+  key = myACSkey,
+  year = 2018,
+  output = "wide",
+  show_call = T,
+  geometry = T,
+  keep_geo_vars = T
+) %>%
+  select(COUNTYFP, geometry)
+
+
+# Rename columns in Census Tract Population Center data set
+colnames(CenterPop_tract)[5] <- "CENTER.LATITUDE"
+colnames(CenterPop_tract)[6] <- "CENTER.LONGITUDE"
+
+for (i in 1:nrow(CenterPop_tract)) {
+  CenterPop_tract$TRACTCE[i] <-
+    str_pad(CenterPop_tract$TRACTCE[i], 6, pad = "0")
+}
+
+map$TRACTCE <- as.numeric(map$TRACTCE)
+map$COUNTYFP <- as.numeric(map$COUNTYFP)
+CenterPop_tract$TRACTCE <- as.numeric(CenterPop_tract$TRACTCE)
+
+# VA only
+CenterPopTR_map <-
+  inner_join(CenterPop_tract, map, by = c("TRACTCE", "COUNTYFP"))
+# anti_join(CenterPop_tract, map, by=c("TRACTCE", "COUNTYFP"))
+
+CenterPopTR_mapNOVA <- CenterPopTR_map %>%
+  filter(NAMELSAD %in% NOVA_TRnames$NAMELSAD)
+```
+
+```{r Calculate Inverse Distance}
+
+# Helper function: calculates distance in meters given 2 sets of coordinates (long, lat)
+# longitude first, then latitude
+calculate_distance <- function(long1, lat1, long2, lat2) {
+  ans <- distm(c(long1, lat1), c(long2, lat2), fun = distHaversine)
+  return(ans)
+}
+
+
+# Pass in location points dataset
+# radius defaults are 5, 10, 20 miles (in meters)
+# uses Tract Population center
+loc_within_radius <-
+  function(loc_data,
+           radius_1 = 8046.72,
+           radius_2 = 16093.4,
+           radius_3 = 32186.9) {
+    centerData_copy <- CenterPopTR_mapNOVA
+    
+    centerData_copy$COUNT_5mile <- NA
+    centerData_copy$INVERSE_DIST_5mile <- NA
+    centerData_copy$COUNT_10mile <- NA
+    centerData_copy$INVERSE_DIST_10mile <- NA
+    centerData_copy$COUNT_20mile <- NA
+    centerData_copy$INVERSE_DIST_20mile <- NA
+    
+    for (i in 1:nrow(centerData_copy)) {
+      count_1 <- 0
+      inverse_dist_1 <- 0
+      count_2 <- 0
+      inverse_dist_2 <- 0
+      count_3 <- 0
+      inverse_dist_3 <- 0
+      centerData_copy$COUNT_5mile[i] <- 0
+      centerData_copy$INVERSE_DIST_5mile[i] <- 0
+      centerData_copy$COUNT_10mile[i] <- 0
+      centerData_copy$INVERSE_DIST_10mile[i] <- 0
+      centerData_copy$COUNT_20mile[i] <- 0
+      centerData_copy$INVERSE_DIST_20mile[i] <- 0
+      
+      for (j in 1:nrow(loc_data)) {
+        distance <-
+          calculate_distance(
+            centerData_copy$CENTER.LONGITUDE[i],
+            centerData_copy$CENTER.LATITUDE[i],
+            loc_data$lon[j],
+            loc_data$lat[j]
+          )
+        
+        if (distance <= radius_1) {
+          count_1 <- count_1 + 1
+          inverse_dist_1 <- (1 / distance) + inverse_dist_1
+        }
+        if (distance <= radius_2) {
+          count_2 <- count_2 + 1
+          inverse_dist_2 <- (1 / distance) + inverse_dist_2
+        }
+        if (distance <= radius_3) {
+          count_3 <- count_3 + 1
+          inverse_dist_3 <- (1 / distance) + inverse_dist_3
+        }
+        
+      }
+      centerData_copy$COUNT_5mile[i] <- count_1
+      centerData_copy$INVERSE_DIST_5mile[i] <-
+        inverse_dist_1 / centerData_copy$POPULATION[i]
+      centerData_copy$COUNT_10mile[i] <- count_2
+      centerData_copy$INVERSE_DIST_10mile[i] <-
+        inverse_dist_2 / centerData_copy$POPULATION[i]
+      centerData_copy$COUNT_20mile[i] <- count_3
+      centerData_copy$INVERSE_DIST_20mile[i] <-
+        inverse_dist_3 / centerData_copy$POPULATION[i]
+    }
+    return(centerData_copy)
+  }
+
+
+# Output columns are COUNT_5mile... COUNT_20mile, INVERSE_DIST_5mile...INVERSE_DIST_20mile
+foodRetailer_invDist <- loc_within_radius(foodRetailer_data)
+foodPantry_invDist <- loc_within_radius(foodPantry_data)
+farmersMarkets_invDist <- loc_within_radius(farmersMarkets_data)
+
+```
+
+
+```{r Food Retailer Plot 1, eval = TRUE, echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center"}
+
+# Map of count of retailers within radius
+ggplot(foodPantry_invDist) + 
+  geom_sf(aes(fill= INVERSE_DIST_20mile, geometry=geometry)) +
+  geom_sf(data=va_sf, fill="transparent", color="black", size=.5) +
+  geom_sf(data=loudoun_outline, fill="transparent", color="red", size=.75) +
+  ylim(-38.4,-39.3) + xlim(-78.1, -77) +
+  scale_fill_gradientn(colours=c("red", "yellow", "green", "blue") ,name="Count", trans="log",  
+                       breaks = c(0, 0.000001, 0.00001, 0.0001, 0.001, 0.01), labels=c(0, 0.000001, 0.00001, 0.0001, 0.001, .01),
+                      na.value="grey") +
+  theme_bw() +theme(legend.title = element_blank()) + 
+  ggtitle("Inverse Distance for Food Retailer within 20 Miles of Tract Center")
+
+```
+
+
+
+
+```{r Food Pantry Plot 2, eval = TRUE,  echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center"}
+# Map of inverse distance of retailers within radius
+ggplot(foodPantry_invDist) + 
+  geom_sf(aes(fill= INVERSE_DIST_20mile, geometry=geometry)) +
+  geom_sf(data=va_sf, fill="transparent", color="black", size=.5) +
+  geom_sf(data=loudoun_outline, fill="transparent", color="red", size=.75) +
+  ylim(-38.4,-39.3) + xlim(-78.1, -77) +
+  scale_fill_gradientn(colours=c("red", "yellow", "green", "blue") ,name="Count", trans="log",  
+                       breaks = c(0, 0.000001, 0.00001, 0.0001, 0.001, 0.01), labels=c(0, 0.000001, 0.00001, 0.0001, 0.001, .01),
+                      na.value="grey") +
+  theme_bw() +theme(legend.title = element_blank()) + 
+  ggtitle("Inverse Distance for Food Pantries within 20 Miles of Tract Center")
+```
+
+
+
+```{r Food Market Plot 3, eval = TRUE,  echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center"}
+# Map of inverse distance of retailers within radius
+ggplot(farmersMarkets_invDist) + 
+  geom_sf(aes(fill= INVERSE_DIST_20mile, geometry=geometry)) +
+  geom_sf(data=va_sf, fill="transparent", color="black", size=.5) +
+  geom_sf(data=loudoun_outline, fill="transparent", color="red", size=.75) +
+  ylim(-38.4,-39.3) + xlim(-78.1, -77) +
+  scale_fill_gradientn(colours=c("red", "yellow", "green", "blue") ,name="Count", trans="log",  
+                       breaks = c(0, 0.000001, 0.00001, 0.0001, 0.001, 0.01), labels=c(0, 0.000001, 0.00001, 0.0001, 0.001, .01),
+                      na.value="grey") +
+  theme_bw() +theme(legend.title = element_blank()) + 
+  ggtitle("Inverse Distance for Food Markets within 20 Miles of Tract Center")
+```
+
+
+
+These maps show the relative food access on a county level.  
+The blue color represents higher food access whereas red represents lower food access.
+
+This food access indicator can be helpful in determining areas that are in need of support to services such as food pantries and food banks.
+
+Centers of Population for the 2010 Census. 
+Retrieved from <https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html>
