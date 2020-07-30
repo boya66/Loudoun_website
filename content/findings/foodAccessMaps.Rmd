@@ -35,38 +35,38 @@ myACSkey <- " "
 register_google(key = " ")
 
 farmersMarkets_data <-
-  read.csv("../../dspg2020Loudoun/data/FoodAccessGeoLocData/FarmersMarket_NOVA_geoloc.csv",
+  read.csv("../../../dspg2020Loudoun/data/FoodAccessGeoLocData/FarmersMarket_NOVA_geoloc.csv",
     header = T,
     stringsAsFactors = F
   )
 
 foodPantry_data <-
   read.csv(
-    "../../dspg2020Loudoun/data/FoodAccessGeoLocData/FoodPantry_NOVA_geoloc.csv",
+    "../../../dspg2020Loudoun/data/FoodAccessGeoLocData/FoodPantry_NOVA_geoloc.csv",
     header = T,
     stringsAsFactors = F
   )
 
 foodRetailer_data <-
   read.csv(
-    "../../dspg2020Loudoun/data/FoodAccessGeoLocData/FoodRetailers_NOVA_geoloc.csv",
+    "../../../dspg2020Loudoun/data/FoodAccessGeoLocData/FoodRetailers_NOVA_geoloc.csv",
     header = T,
     stringsAsFactors = F
   )
 
 CenterPop_tract <-
   read.csv(
-    "../../dspg2020Loudoun/data/CenPop2010_Mean_TR51.txt",
+    "../../../dspg2020Loudoun/data/CenPop2010_Mean_TR51.txt",
     header = T
   )
 
 map  <-
   st_read(
-    "../../dspg2020Loudoun/data/VirginiaShapeFiles/tl_2019_51_tract.shp",
+    "../../../dspg2020Loudoun/data/VirginiaShapeFiles/tl_2019_51_tract.shp",
     stringsAsFactors = FALSE
   )
 
-NOVA_TRnames <- read.csv("../../dspg2020Loudoun/data/NOVA_CensusTracts.csv",
+NOVA_TRnames <- read.csv("../../../dspg2020Loudoun/data/NOVA_CensusTracts.csv",
                           header=T, stringsAsFactors = F)
 
 
