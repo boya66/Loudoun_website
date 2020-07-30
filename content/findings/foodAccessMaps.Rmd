@@ -31,8 +31,8 @@ library(tidycensus)
 library(RColorBrewer)
 ```
 ```{r}
-myACSkey <- "f69e67b9edaba057db9eb6c475030af08cf1adb9"
-register_google(key = "AIzaSyCFa7ij3rXOg2jXGBfdWm_5Hx0zWVPmNvs")
+myACSkey <- " "
+register_google(key = " ")
 
 farmersMarkets_data <-
   read.csv("../../dspg2020Loudoun/data/FoodAccessGeoLocData/FarmersMarket_NOVA_geoloc.csv",
