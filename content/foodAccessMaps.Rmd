@@ -1,5 +1,5 @@
 ---
-title: "Food Accessibility Score"
+title: "Food Accessibility Scores"
 output:
   pdf_document: default
   html_document: default
