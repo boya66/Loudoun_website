@@ -69,5 +69,5 @@ publishDir = "docs"
     weight = 3
     
 [[menu.icon]]
-    url = "boya66@vt.edu"
+    url = "mailto:boya66@vt.edu"
     name = "far fa-envelope"
