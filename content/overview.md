@@ -1,15 +1,14 @@
 ### 2020 Loudoun County Project {style=text-align:center}
 
-We partnered with Virginia Cooperative Extension to identify areas where a potential food hub in Loudon County could alleviate food insecurity in northern Virginia.
+We partnered with Virginia Cooperative Extension to assess the potential for a Loudon County food hub to alleviate food insecurity in northern Virginia and provide a sales outlet for local agricultural products.  
 
 ### Project Goals {style=text-align:center}
 
-By identifying areas of food vulnerability and food outlets, we aim to help stakeholders identify neighborhoods where a Loudon County food hub could serve these populations.
+Our project goal was to create a composite index measuring food insecurity in Loudon County and northern Virginia to identify areas where a food hub could improve food and nutrition outcomes. 
 
-### Our Approach {style=text-align:center}
+### Project Approach {style=text-align:center}
 
-Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity. These data were used to construct a composite index of food insecurity at the census tract level. The composite index includes both demand and supply side factors influencing food security.  
-
+Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity. These data were used to construct a composite index of food insecurity at the census tract level. The composite index includes both demand and supply side factors influencing food security. By identifying areas of food vulnerability and food outlets, stakeholders can identify neighborhoods where a Loudoun County food hub could serve these populations. 
 
 
 ### References 
