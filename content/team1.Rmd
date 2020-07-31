@@ -23,7 +23,7 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 ### DSPG Team Members {style=text-align:center}
 
 <center>
-![Boya Zhang](/images/Boya.Zhang.VT.jpg){width=150px height=150px}![Talib Grant](/images/Talib.Grant.VT.jpg){width=150px height=150px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=160px height=160px} ![Adam Wells](/images/Adam.Wells.VT.jpg){width=140px height=160px}
+![Boya Zhang](/images/Boya.Zhang.VT.jpg){width=150px height=160px}![Talib Grant](/images/Talib.Grant.VT.jpg){width=170px height=160px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=160px height=160px} ![Adam Wells](/images/Adam.Wells.VT.jpg){width=140px height=160px}
 
 [Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66)
 
@@ -43,7 +43,7 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 ![Susan Chen](/images/Susan.Chen.VT.jpg){width=150px height=160px}
 ![Conaway Haskins](/images/Conaway.Haskins.VT.jpg){width=150px height=160px}
 ![Matt Holt](/images/Matt.Holt.VT.jpg){width=150px height=160px}
-![Ford Ramsey](/images/Ford.Ramsey.VT.jpg){width=150px height=160px}
+![Ford Ramsey](/images/Ford.Ramsey.VT.jpg){width=160px height=160px}
 
 
 [Susan Chen (Associate Professor, Food and Health Economics, DSPG Project Co-Lead)](https://aaec.vt.edu/people/faculty/chen-susan.html)

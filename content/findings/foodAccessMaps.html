@@ -1,0 +1,59 @@
+---
+title: "Results Section Two"
+description: "Food Accessibility Scores"
+tags: ["R", "ggmap", "tidycensus"]
+weight: 3
+draft: false
+output: html_document
+---
+
+
+
+<p>The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmer’s markets, and food pantries.</p>
+<p>To calculate a regional accessibility indicator at a census tract level, a center location must be determined. To find the center for each census tract, the geometric center of weighted by population density is used.</p>
+<p>Centers of Population for the 2010 Census. Retrieved from <a href="https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html">here</a>.</p>
+<p>For each census tract, only food supply sources within a specified radius would contribute to each census tract indicator.</p>
+<p>Regional Food Accessibility = <span class="math inline">\(\frac{\sum_{}^{} \frac{1}{distance}}{population}\)</span></p>
+<p>The summation of the inverse distances between each food supply source to the tract center was used to weight the closer food sources higher than those further away.</p>
+<p>Lastly, the summation for each census tract is weighted by its census tract population to account for differences in rural and urban areas. The results are regional accessibility indicators for each type of food source on the census tract level.</p>
+<p>These indicators can help determine areas that likely require support to services such as food pantries, food banks and could potentially benefit from a local food hub.</p>
+<div id="food-accessibility-maps" class="section level2">
+<h2>Food Accessibility Maps</h2>
+<div class="figure">
+<img src="/food_access/FarmersMarkets20miles.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This map shows the regional accessibility of farmer’s markets in the Northern Virginia area. The darker colors depict lower accessibility to farmer’s markets that are within 20 miles of each Census tract center.</p>
+<div class="figure">
+<img src="/food_access/Pantries20miles.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This map shows the regional accessibility of food pantries in the Northern Virginia area. The darker colors depict lower accessibility to food pantries that are within 20 miles of each Census tract center.</p>
+<div class="figure">
+<img src="/food_access/Retailer20miles.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This map shows the regional accessibility of food retailers in the Northern Virginia area. The darker colors depict lower accessibility to food retailers that are within 20 miles of each Census tract center.</p>
+<div class="figure">
+<img src="/food_access/transportation.png" style="width:55%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This map shows the percent of households without a car on the Census tract level. <a href="https://rpubs.com/wellay01/NoVa_NoCar">Click to see an interactive map</a></p>
+<div class="figure">
+<img src="/food_access/blue.png" style="width:55%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This isochrone map shows the accessibility of food pantries within a 10-minute drive for the Northern Virginia area. The darker the shading of each map represents an overlap between the coverage of multiple food pantries. <a href="https://rpubs.com/wellay01/NoVaPantries">Click to see an interactive map</a></p>
+<div class="figure">
+<img src="/food_access/red.png" style="width:55%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This isochrone map shows the accessibility of farmer’s markets within a 10-minute drive for the Northern Virginia area. The darker the shading of each map represents an overlap between the coverage of multiple farmer’s markets.</p>
+<p><a href="https://rpubs.com/wellay01/FarmersNoVa">Click to see an interactive map</a></p>
+<div class="figure">
+<img src="/food_access/green.png" style="width:55%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+<p>This isochrone map shows the accessibility of food retailers within a 10-minute drive for the Northern Virginia area. The darker the shading of each map represents an overlap between the coverage of multiple food retailers.</p>
+<p><a href="https://rpubs.com/wellay01/RetailersNoVa">Click to see an interactive map</a></p>
+</div>

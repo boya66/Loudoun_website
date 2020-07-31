@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factor Analysis on Virginia Tech</title>
+    <link>/tags/factor-analysis/</link>
+    <description>Recent content in Factor Analysis on Virginia Tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/factor-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Results Section Three</title>
+      <link>/findings/results-section-three/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/findings/results-section-three/</guid>
+      <description>Project goals We have presented the food security of Loudoun from several aspects. Apparently, many of them are correlated with each other. In this session, we summarize all the metrics by creating a composite indicator. Essentially, it is a weighted average of all the previous variables. The weights is determined by Principel component analysis (PCA)/Factor Analysis (FA).
+ Our approach PCA/FA groups together individual indicators which are collinear to form a composite indicator that captures as much as possible of the information common to individual indicators.</description>
+    </item>
+    
+  </channel>
+</rss>

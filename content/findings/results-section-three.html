@@ -1,7 +1,7 @@
 ---
 title: "Results Section Three"
-description: "Project description here"
-tags: ["R", "networks"]
+description: "Composite Food Insecurity Index"
+tags: ["R", "Factor Analysis"]
 weight: 4
 draft: false
 output: html_document
@@ -9,16 +9,39 @@ output: html_document
 
 
 
-<p>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]</p>
-<div id="main-findings" class="section level3">
-<h3>Main Findings</h3>
-<p>[Here you will describe the results and include important visualizations from your project.]</p>
+<div id="project-goals" class="section level3">
+<h3>Project goals</h3>
+<p>We have presented the food security of Loudoun from several aspects. Apparently, many of them are correlated with each other. In this session, we summarize all the metrics by creating a composite indicator. Essentially, it is a weighted average of all the previous variables. The weights is determined by Principel component analysis (PCA)/Factor Analysis (FA).</p>
 </div>
-<div id="conclusion-and-policy-implications" class="section level3">
-<h3>Conclusion and Policy Implications</h3>
-<p>[Here you could highlight the main takeaways and the potential policy implications of your findings.]</p>
+<div id="our-approach" class="section level3">
+<h3>Our approach</h3>
+<p>PCA/FA groups together individual indicators which are collinear to form a composite indicator that captures as much as possible of the information common to individual indicators. The individual indicators include:</p>
+<div id="food-access-indicators" class="section level5">
+<h5>Food access indicators:</h5>
+<ul>
+<li>Food retailer access indicators</li>
+<li>Farmer's market acess indicators</li>
+<li>Food pantry acess indicators</li>
+</ul>
 </div>
-<div id="references" class="section level3">
-<h3>References</h3>
-<p>[List your references here using APA format (or at least standardize all of the references using the same format).]</p>
+<div id="summary-demographic-variables-from-cdc-svi-2018-data-dictionary" class="section level5">
+<h5>Summary demographic variables from CDC SVI 2018 Data Dictionary:</h5>
+<ul>
+<li>Socioeconomic index</li>
+<li>Household Composition &amp; Disability index</li>
+<li>inority Status &amp; Language index</li>
+<li>Housing Type &amp; Transportation index</li>
+<li>Overall social vulnerability index</li>
+</ul>
+<p>We standardized the variables first, then applied Factor Analysis. We kept three factors with highest loadings. Each factor takes 44.7%, 26.7%, and 7.7% of the overall variation, cumulatively 79%. Square of factor loadings represents the proportion of the total unit variance of the indicator which is explained by the factor. Thus, we take square of factor loadings as our weights.</p>
+<p>The heatmap of the composite food insecuriy index is shown below:</p>
+<div class="figure">
+<img src="/findings/composite_index/Composite.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;" />
+
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>Ford, can you help write this part?</p>
 </div>

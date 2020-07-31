@@ -11,20 +11,11 @@
     
     
     <item>
-      <title>app</title>
-      <link>/tags/app/</link>
+      <title>Factor Analysis</title>
+      <link>/tags/factor-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>collapsibleTree</title>
-      <link>/tags/collapsibletree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/collapsibletree/</guid>
+      <guid>/tags/factor-analysis/</guid>
       <description></description>
     </item>
     
@@ -38,11 +29,11 @@
     </item>
     
     <item>
-      <title>networks</title>
-      <link>/tags/networks/</link>
+      <title>ggmap</title>
+      <link>/tags/ggmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/networks/</guid>
+      <guid>/tags/ggmap/</guid>
       <description></description>
     </item>
     
@@ -52,6 +43,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidycensus</title>
+      <link>/tags/tidycensus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidycensus/</guid>
       <description></description>
     </item>
     

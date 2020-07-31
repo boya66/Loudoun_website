@@ -22,21 +22,23 @@ Main Findings [Here you will describe the results and include important visualiz
     
     <item>
       <title>Results Section One</title>
-      <link>/findings/results-section-one/</link>
+      <link>/findings/knitted_demographics_loudon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/findings/results-section-one/</guid>
-      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Examples Page If you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
+      <guid>/findings/knitted_demographics_loudon/</guid>
+      <description>The NoVA area is composed by:
+ City of Alexandria Arlington County City of Fairfax Fairfax county City of Falls Church Fauquier County Loudoun County City of Manassas City of Manassas Park Prince William County  The Social Vulnerability Index is created collecting several socioeconomic factors from the census tract data: i.e. the poverty, ethnicity, spoken language, household composition and crowdness, disabilities when present, housing type and access to transportation in the area.</description>
     </item>
     
     <item>
       <title>Results Section Two</title>
-      <link>/findings/results-section-two/</link>
+      <link>/findings/foodaccessmaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/findings/results-section-two/</guid>
-      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings [Here you will describe the results and include important visualizations from your project.</description>
+      <guid>/findings/foodaccessmaps/</guid>
+      <description>The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmer’s markets, and food pantries.
+To calculate a regional accessibility indicator at a census tract level, a center location must be determined. To find the center for each census tract, the geometric center of weighted by population density is used.
+Centers of Population for the 2010 Census.</description>
     </item>
     
     <item>
@@ -45,8 +47,8 @@ Main Findings [Here you will describe the results and include important visualiz
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-three/</guid>
-      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings [Here you will describe the results and include important visualizations from your project.</description>
+      <description>Project goals We have presented the food security of Loudoun from several aspects. Apparently, many of them are correlated with each other. In this session, we summarize all the metrics by creating a composite indicator. Essentially, it is a weighted average of all the previous variables. The weights is determined by Principel component analysis (PCA)/Factor Analysis (FA).
+ Our approach PCA/FA groups together individual indicators which are collinear to form a composite indicator that captures as much as possible of the information common to individual indicators.</description>
     </item>
     
   </channel>

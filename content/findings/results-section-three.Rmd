@@ -1,22 +1,44 @@
 ---
 title: "Results Section Three"
-description: "Project description here"
-tags: ["R", "networks"]
+description: "Composite Food Insecurity Index"
+tags: ["R", "Factor Analysis"]
 weight: 4
 draft: false
 output: html_document
 ---
+### Project goals
+We have presented the food security of Loudoun from several aspects. Apparently, many of them are correlated with each other. In this session, we summarize all the metrics by creating a composite indicator. Essentially, it is a weighted average of all the previous variables. The weights is determined by Principel component analysis (PCA)/Factor Analysis (FA).
 
-[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data & Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.] 
+### Our approach
+PCA/FA groups together individual indicators which are collinear to form a composite indicator that captures as much as possible of the information common to individual indicators. The individual indicators include:
 
-### Main Findings 
+##### Food access indicators:
+- Food retailer access indicators
+- Farmer's market acess indicators
+- Food pantry acess indicators
 
-[Here you will describe the results and include important visualizations from your project.] 
+##### Summary demographic variables from CDC SVI 2018 Data Dictionary:
+- Socioeconomic index
+- Household Composition & Disability index
+- inority Status & Language index
+- Housing Type & Transportation index
+- Overall social vulnerability index
 
-### Conclusion and Policy Implications 
+We standardized the variables first, then applied Factor Analysis. We kept three factors with highest loadings. Each factor takes 44.7%, 26.7%, and 7.7% of the overall variation, cumulatively 79%. Square of factor loadings represents the proportion of the total unit variance of the indicator which is explained by the factor. Thus, we take square of factor loadings as our weights.
 
-[Here you could highlight the main takeaways and the potential policy implications of your findings.] 
+The heatmap of the composite food insecuriy index is shown below:
+```{r setup, include=FALSE}
+library(knitr)
+library(ggplot2)
+library(png)
+library(grid)
+library(jpeg)
+```
 
-### References 
+![](/findings/composite_index/Composite.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
 
-[List your references here using APA format (or at least standardize all of the references using the same format).]
+
+### Conclusion
+Ford, can you help write this part?
+
+
