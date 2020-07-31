@@ -9,3 +9,17 @@ By identifying areas of food vulnerability and food outlets, we aim to help stak
 ### Our Approach {style=text-align:center}
 
 Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity. These data were used to construct a composite index of food insecurity at the census tract level. The composite index includes both demand and supply side factors influencing food security.  
+
+
+
+### References 
+
+[1] Clark, J. K., Rouse, C., Sehgal, A. R., Bailey, M., Bell, B. A., Pike, S. N., Sharpe, P. A., & Freedman, D A. (2019). Food hub to address healthy food access gaps: Residents’ preferences. Journal of Agriculture, Food Systems, and Community Development, 9(1), 59–68. 
+
+[2] Fischer, Micaela, Rich Pirog, and Michael W. Hamm. "Predictors of food hub financial viability." Journal of Hunger & Environmental Nutrition 10.1 (2015): 100-114.
+
+[3] Avetisyan, Tatevik, and R. Brent Ross. "The Intersection of Social and Economic Value Creation in Social Entrepreneurship: A Comparative Case Study of Food Hubs." Journal of Food Distribution Research 50.856-2019-3200 (2019): 97-104.
+
+[4]Gundersen, C., et al. "Map the meal gap 2018: A report on county and congressional district food insecurity and county food cost in the United States in 2016." Feeding America (2018).
+
+[5]Mulaik, S. A. (2009). Foundations of factor analysis. CRC press.  
