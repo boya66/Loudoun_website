@@ -1,6 +1,6 @@
 ---
 title: "Results Section One"
-description: "Social Vulnerability Index"
+description: "Social and Economic Vulnerability Index"
 tags: ["R", "ggmap"]
 weight: 1
 draft: false
@@ -9,6 +9,7 @@ output: html_document
 
 
 
+<p>Loudon County is part of the northern Virginia region. Along with Loudon County, NOVA also consists of:</p>
 <p>The NoVA area is composed by:</p>
 <ul>
 <li>City of Alexandria</li>
@@ -22,8 +23,11 @@ output: html_document
 <li>City of Manassas Park</li>
 <li>Prince William County</li>
 </ul>
-<p>The Social Vulnerability Index is created collecting several socioeconomic factors from the census tract data: i.e. the poverty, ethnicity, spoken language, household composition and crowdness, disabilities when present, housing type and access to transportation in the area.</p>
-<p><img src="/findings/knitted_demographics_loudon_files/figure-html/plot-1.png" width="960" style="display: block; margin: auto;" /></p>
-<p>These socioeconomic and demographic factors affect the resilience of communities. The map shows the vulenrability distribution in the NoVA area, higher values show areas subjected to greater vulnerability.</p>
-<p>The SVI can be helpful to estimate the amount of needed supplies like food, identify areas in need of emergency shelters, identify communities that will need continued support to recover following an emergency, a natural disaster or a pandemic.</p>
+<p>Recognizing that food insecurity is not bound by county or city, we constructed social and economic vulnerability indices for NOVA at the census tract levels. This examines demand-side factors affecting food insecurity in lieu of data on actual household food consumption. In fact, Ibok, Osbahr, and Srinivasan (2019) suggest that per capita calorie consumption and food consumption scores may not be good indicators of food insecurity.</p>
+<p>The social and economic vulnerability index (SEVI) is constructed using census tract-level data on poverty rate, ethnicity, spoken language, household composition, and crowdedness, physical and mental disabilities, housing type, and access to private/public transportation. All of these factors can affect the ability of households to obtain healthy, nutritious foods. It is important to note that food insecurity can and often does, go hand in hand with obesity (Eisenmann, Gunersen, Lohman, Garasky, and Stewart, 2011).</p>
+<p><img src="/knitted_demographics_loudon_files/figure-html/plot-1.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>The SEVI is shown in Figure 1 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudon County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may need targeted assistance.</p>
+<p>References:
+Eisenmann, J. C., Gundersen, C., Lohman, B. J., Garasky, S., &amp; Stewart, S. D. (2011). Is food insecurity related to overweight and obesity in children and adolescents? A summary of studies, 1995–2009. Obesity Reviews, 12(5), 73-83.
+Ibok, O. W., Osbahr, H., &amp; Srinivasan, C. (2019). Advancing a new index for measuring household vulnerability to food insecurity. Food Policy, 84, 10-20.</p>
 <p>CDC Social Vulnerability Index. Retrieved from: <a href="https://svi.cdc.gov/" class="uri">https://svi.cdc.gov/</a></p>

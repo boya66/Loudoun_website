@@ -18,8 +18,6 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 
 ### 2020 Loudoun County Summer Project {style=text-align:center}
 
-##### [Optional: General description of your project, team members, and how they complement each other.] {style=text-align:center}
-
 ### DSPG Team Members {style=text-align:center}
 
 <center>
