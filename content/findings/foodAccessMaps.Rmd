@@ -6,6 +6,7 @@ weight: 3
 draft: false
 output: html_document
 ---
+<center>
 Food insecurity may also be affected by food accessibility. Those with access to high quality food outlets were less likely to be food insecure (Mayer, Hillier, Bachhuber and Long, 2014). We measured food access in the Loudon County and northern Virginia area using three indicators. These indicators correspond to traditional food retailers, farmers’ markets, and food pantries. Unlike traditional food retailers and farmers’ markets, food pantries usually provide food to vulnerable populations for free or at especially discounted prices. 
 
 The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmers’ markets, and food pantries. To calculate a regional accessibility indicator at the census tract level, we first determined the location within each census tract that we used to measure the distance to food retailers. Instead of using the geographic center of each census tract, we used the geometric center weighted by population density. This is especially important for large census tracts where the bulk of the population may reside in only a small part of the tract. The population weighted centroid was constructed using the Centers of Population for the 2010 Census retrieved from  [here](https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html).
@@ -22,31 +23,31 @@ The following travel isochrones show areas of Loudon County and northern Virgini
 
 
 
-<center>
+
+
 ![Food Pantries](/food_access/blue.png){width=350px height=300px}![Farmers' Markets](/food_access/red.png){width=350px height=300px}
 ![Food Retailers](/food_access/green.png){width=350px height=300px}
 
-Food Pantries (Blue)   -  Farmers' Markets (Red)  -  Food Retailers (Green)
+*Food Pantries (Blue)   -  Farmers' Markets (Red)  -  Food Retailers (Green)*
 
 
 
 The travel isochrones can be compared to the percent of the population in the census tract without a car. This map is also available in an interactive format at: car ownership map.
 
-<center>
+
 ![](/food_access/transportation.png){width=400px height=400px}
+
+
 
 Many of the areas with low car ownership are also in areas with good access to retailers. Access to farmers’ markets is also good in many areas with low car ownership. One exception is the area around Manassas. Food pantries, in general, appear to be well-targeted to these areas as well.
 The following figures show the food access index variables where the underlying index is constructed using all retailers, farmers’ markets, or food pantries within a 20 mile radius of the population weighted geographic center of the census tract. 
 
 
-![](/food_access/FarmersMarkets20miles.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
 
-![](/food_access/Pantries20miles.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
-
-
-![](/food_access/Retailer20miles.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
+![FarmersMarket](/food_access/FarmersMarkets20miles.png){width=350px height=350px}![Pantries](/food_access/Pantries20miles.png){width=350px height=350px}
 
 
+![](/food_access/Retailer20miles.png){width=350px height=350px}
 
 
 There is less access in rural and suburban areas compared to urban areas. This is especially the case for food pantries. It is important to remember that access is only one aspects that drives food insecurity. In the final part of this project, we combine both food access and social and economic indicators to create a composite index of food insecurity.
@@ -54,6 +55,7 @@ There is less access in rural and suburban areas compared to urban areas. This i
 References:
 Mayer, V. L., Hillier, A., Bachhuber, M. A., & Long, J. A. (2014). Food insecurity, neighborhood food access, and food assistance in Philadelphia. Journal of Urban Health, 91(6), 1087-1097.
 
+</center>
 
 
 

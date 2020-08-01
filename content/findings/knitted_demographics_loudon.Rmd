@@ -6,21 +6,19 @@ weight: 1
 draft: false
 output: html_document
 ---
-
+<center>
 Loudon County is part of the northern Virginia region. Along with Loudon County, NOVA also consists of:
 
-The NoVA area is composed by:
-
-* City of Alexandria
-+ Arlington County
-+ City of Fairfax
-+ Fairfax county
-+ City of Falls Church
-+ Fauquier County
-+ Loudoun County
-+ City of Manassas
-+ City of Manassas Park
-+ Prince William County
+ City of Alexandria  
+ Arlington County  
+ City of Fairfax  
+ Fairfax county  
+ City of Falls Church  
+ Fauquier County  
+ Loudoun County  
+ City of Manassas  
+ City of Manassas Park  
+ Prince William County  
 
 Recognizing that food insecurity is not bound by county or city, we constructed social and economic vulnerability indices for NOVA at the census tract levels. This examines demand-side factors affecting food insecurity in lieu of data on actual household food consumption. In fact, Ibok, Osbahr, and Srinivasan (2019) suggest that per capita calorie consumption and food consumption scores may not be good indicators of food insecurity. 
 
@@ -119,3 +117,4 @@ Eisenmann, J. C., Gundersen, C., Lohman, B. J., Garasky, S., & Stewart, S. D. (2
 Ibok, O. W., Osbahr, H., & Srinivasan, C. (2019). Advancing a new index for measuring household vulnerability to food insecurity. Food Policy, 84, 10-20. 
 
 CDC Social Vulnerability Index. Retrieved from: https://svi.cdc.gov/
+</center>
