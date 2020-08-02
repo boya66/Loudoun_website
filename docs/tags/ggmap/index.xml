@@ -16,8 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/knitted_demographics_loudon/</guid>
-      <description>The NoVA area is composed by:
- City of Alexandria Arlington County City of Fairfax Fairfax county City of Falls Church Fauquier County Loudoun County City of Manassas City of Manassas Park Prince William County  The Social Vulnerability Index is created collecting several socioeconomic factors from the census tract data: i.e. the poverty, ethnicity, spoken language, household composition and crowdness, disabilities when present, housing type and access to transportation in the area.</description>
+      <description>Loudon County is part of the northern Virginia region. Along with Loudon County, NOVA also consists of:
+The NoVA area is composed by:
+ City of Alexandria Arlington County City of Fairfax Fairfax county City of Falls Church Fauquier County Loudoun County City of Manassas City of Manassas Park Prince William County  Recognizing that food insecurity is not bound by county or city, we constructed social and economic vulnerability indices for NOVA at the census tract levels.</description>
     </item>
     
     <item>
@@ -26,9 +27,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/foodaccessmaps/</guid>
-      <description>The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmer’s markets, and food pantries.
-To calculate a regional accessibility indicator at a census tract level, a center location must be determined. To find the center for each census tract, the geometric center of weighted by population density is used.
-Centers of Population for the 2010 Census.</description>
+      <description>Food insecurity may also be affected by food accessibility. Those with access to high quality food outlets were less likely to be food insecure (Mayer, Hillier, Bachhuber and Long, 2014). We measured food access in the Loudon County and northern Virginia area using three indicators. These indicators correspond to traditional food retailers, farmers’ markets, and food pantries. Unlike traditional food retailers and farmers’ markets, food pantries usually provide food to vulnerable populations for free or at especially discounted prices.</description>
     </item>
     
   </channel>

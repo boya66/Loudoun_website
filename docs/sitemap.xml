@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/findings/general-overview/</loc>
-  </url>
-  
-  <url>
     <loc>/findings/knitted_demographics_loudon/</loc>
   </url>
   
@@ -20,7 +16,6 @@
   
   <url>
     <loc>/methods/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -47,10 +42,6 @@
   
   <url>
     <loc>/findings/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/geospatial/</loc>
   </url>
   
   <url>

@@ -11,23 +11,14 @@
     
     
     <item>
-      <title>General Overview of the Project</title>
-      <link>/findings/general-overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/findings/general-overview/</guid>
-      <description>While this page is optional, it probably makes sense to have one weighted at the top (see the front matter at the top of this Rmd file) that gives a general overview of the project. This could be something like the final poster while the other pages highlight more in-depth observations. Here is a general schema of what should be covered throughout your website:
-Main Findings [Here you will describe the results and include important visualizations from your project.</description>
-    </item>
-    
-    <item>
       <title>Results Section One</title>
       <link>/findings/knitted_demographics_loudon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/knitted_demographics_loudon/</guid>
-      <description>The NoVA area is composed by:
- City of Alexandria Arlington County City of Fairfax Fairfax county City of Falls Church Fauquier County Loudoun County City of Manassas City of Manassas Park Prince William County  The Social Vulnerability Index is created collecting several socioeconomic factors from the census tract data: i.e. the poverty, ethnicity, spoken language, household composition and crowdness, disabilities when present, housing type and access to transportation in the area.</description>
+      <description>Loudon County is part of the northern Virginia region. Along with Loudon County, NOVA also consists of:
+The NoVA area is composed by:
+ City of Alexandria Arlington County City of Fairfax Fairfax county City of Falls Church Fauquier County Loudoun County City of Manassas City of Manassas Park Prince William County  Recognizing that food insecurity is not bound by county or city, we constructed social and economic vulnerability indices for NOVA at the census tract levels.</description>
     </item>
     
     <item>
@@ -36,9 +27,7 @@ Main Findings [Here you will describe the results and include important visualiz
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/foodaccessmaps/</guid>
-      <description>The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmer’s markets, and food pantries.
-To calculate a regional accessibility indicator at a census tract level, a center location must be determined. To find the center for each census tract, the geometric center of weighted by population density is used.
-Centers of Population for the 2010 Census.</description>
+      <description>Food insecurity may also be affected by food accessibility. Those with access to high quality food outlets were less likely to be food insecure (Mayer, Hillier, Bachhuber and Long, 2014). We measured food access in the Loudon County and northern Virginia area using three indicators. These indicators correspond to traditional food retailers, farmers’ markets, and food pantries. Unlike traditional food retailers and farmers’ markets, food pantries usually provide food to vulnerable populations for free or at especially discounted prices.</description>
     </item>
     
     <item>
@@ -47,8 +36,7 @@ Centers of Population for the 2010 Census.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-three/</guid>
-      <description>Project goals We have presented the food security of Loudoun from several aspects. Apparently, many of them are correlated with each other. In this session, we summarize all the metrics by creating a composite indicator. Essentially, it is a weighted average of all the previous variables. The weights is determined by Principel component analysis (PCA)/Factor Analysis (FA).
- Our approach PCA/FA groups together individual indicators which are collinear to form a composite indicator that captures as much as possible of the information common to individual indicators.</description>
+      <description>Project goals The goal of this project was to identify areas in Loudon County and northern Virginia where a potential Loudon County food hub could alleviate food insecurity. As we have shown in the preceding sections, there are many variables related to food security and these variables are often correlated with one another. In this final section, we construct a single composite index variable for food insecurity which can be used to identify food insecure areas.</description>
     </item>
     
     <item>
@@ -57,8 +45,7 @@ Centers of Population for the 2010 Census.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/methods/</guid>
-      <description>2020 Fairfax County Summer Project Data and Methodology Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+      <description>Data and Methodology  Matson and Thayer (2014) note that food hubs can decrease food insecurity. In assessing the potential for a Loudon County food hub to address such issues, we first identified food insecure areas in the Loudon County region. We used two primary data sources for this project. To develop index variables of food insecurity, we obtained underlying variables on food supply and demand in Loudon County and the northern Virginia region.</description>
     </item>
     
     <item>
@@ -67,9 +54,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/overview/</guid>
-      <description>2020 Loudoun County Project We partnered with Virginia Cooperative Extension to identify areas where a potential food hub in Loudon County could alleviate food insecurity in northern Virginia.
-Project Goals By identifying areas of food vulnerability and food outlets, we aim to help stakeholders identify neighborhoods where a Loudon County food hub could serve these populations.
-Our Approach Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity.</description>
+      <description>2020 Loudoun County Project We partnered with Virginia Cooperative Extension to assess the potential for a Loudoun County food hub to alleviate food insecurity in northern Virginia and provide a sales outlet for local agricultural products.
+Project Goals Our project goal was to create a composite index measuring food insecurity in Loudon County and northern Virginia to identify areas where a food hub could improve food and nutrition outcomes.
+Project Approach Our research team used an interdisciplinary approach to combine datasets of publicly available economic and social information related to food insecurity.</description>
     </item>
     
     <item>
@@ -88,7 +75,7 @@ To add contents  Edit .md files in content directory Edit config.toml to modify 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/team1/</guid>
-      <description>Data Science for the Public Good Program  The Data Science for the Public Good (DSPG) Young Scholars program](https://biocomplexity.virginia.edu/social-decision-analytics/dspg-program) is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
+      <description>Data Science for the Public Good Program  The Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
     </item>
     
   </channel>
