@@ -4,7 +4,7 @@ We partnered with Virginia Cooperative Extension to assess the potential for a L
 
 ### Project Goals {style=text-align:center}
 
-Our project goal was to create a composite index measuring food insecurity in Loudon County and northern Virginia to identify areas where a food hub could improve food and nutrition outcomes. 
+Our project goal was to create a composite index measuring food insecurity in Loudoun County and northern Virginia to identify areas where a food hub could improve food and nutrition outcomes. 
 
 ### Project Approach {style=text-align:center}
 

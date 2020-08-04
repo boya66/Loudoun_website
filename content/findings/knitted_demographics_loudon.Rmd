@@ -7,7 +7,7 @@ draft: false
 output: html_document
 ---
 
-Loudon County is part of the northern Virginia region. Along with Loudon County, NOVA also consists of:
+Loudoun County is part of the northern Virginia region. Along with Loudoun County, NOVA also consists of:
 
 The NoVA area is composed by:
 
@@ -109,9 +109,9 @@ ggplot(map_and_data) +
   scale_fill_viridis_c() + scale_color_viridis_c() +
   theme(legend.title = element_blank()) 
 ```
-![](/knitted_demographics_loudon_files/figure-html/plot-1.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
+![](/knitted_demographics_Loudoun_files/figure-html/plot-1.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
 
-The SEVI is shown in Figure 1 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudon County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may need targeted assistance.
+The SEVI is shown in Figure 1 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudoun County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may need targeted assistance.
 
 <br>
 

@@ -21,7 +21,7 @@ library(grid)
 ### DSPG Team Members {style=text-align:center}
 
 <center>
-![Boya Zhang](/images/Boya.Zhang.VT.jpg){width=150px height=160px}![Talib Grant](/images/Talib.Grant.VT.jpg){width=170px height=160px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=160px height=160px} ![Adam Wells](/images/Adam.Wells.VT.jpg){width=140px height=160px}
+![Boya Zhang](/images/Boya.Zhang.VT.jpg){width=160px height=160px}![Talib Grant](/images/Talib.Grant.VT.jpg){width=170px height=160px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=160px height=160px} ![Adam Wells](/images/Adam.Wells.VT.jpg){width=140px height=160px}
 </center>
 
 [Boya Zhang, Fellow (PhD Student at Virginia Tech, Statistics)](https://github.com/boya66)

@@ -6,7 +6,7 @@ weight: 3
 draft: false
 output: html_document
 ---
-Food insecurity may also be affected by food accessibility. Those with access to high quality food outlets were less likely to be food insecure (Mayer, Hillier, Bachhuber and Long, 2014). We measured food access in the Loudon County and northern Virginia area using three indicators. These indicators correspond to traditional food retailers, farmers’ markets, and food pantries. Unlike traditional food retailers and farmers’ markets, food pantries usually provide food to vulnerable populations for free or at especially discounted prices. 
+Food insecurity may also be affected by food accessibility. Those with access to high quality food outlets were less likely to be food insecure (Mayer, Hillier, Bachhuber and Long, 2014). We measured food access in the Loudoun County and northern Virginia area using three indicators. These indicators correspond to traditional food retailers, farmers’ markets, and food pantries. Unlike traditional food retailers and farmers’ markets, food pantries usually provide food to vulnerable populations for free or at especially discounted prices. 
 
 The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmers’ markets, and food pantries. To calculate a regional accessibility indicator at the census tract level, we first determined the location within each census tract that we used to measure the distance to food retailers. Instead of using the geographic center of each census tract, we used the geometric center weighted by population density. This is especially important for large census tracts where the bulk of the population may reside in only a small part of the tract. The population weighted centroid was constructed using the Centers of Population for the 2010 Census retrieved from  [here](https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html).
 
@@ -22,7 +22,7 @@ The access index variable is essentially a count of food retailers within the sp
 <center>
 ### Food Access Maps
 </center>
-The following travel isochrones show areas of Loudon County and northern Virginia that are within a ten minute drive of a food retailer, farmers’ market, or food pantry. The darker shading of each map represents an overlap between the coverage of multiple retailers, farmers’ markets, or food pantries. Interactive versions of the isochrones maps can be found at the following links: [retailer isochrones](https://rpubs.com/wellay01/RetailersNoVa), [farmers’ market isochrones](https://rpubs.com/wellay01/FarmersNoVa), [food pantry isochrones](https://rpubs.com/wellay01/NoVaPantries).
+The following travel isochrones show areas of Loudoun County and northern Virginia that are within a ten minute drive of a food retailer, farmers’ market, or food pantry. The darker shading of each map represents an overlap between the coverage of multiple retailers, farmers’ markets, or food pantries. Interactive versions of the isochrones maps can be found at the following links: [retailer isochrones](https://rpubs.com/wellay01/RetailersNoVa), [farmers’ market isochrones](https://rpubs.com/wellay01/FarmersNoVa), [food pantry isochrones](https://rpubs.com/wellay01/NoVaPantries).
 
 
 
