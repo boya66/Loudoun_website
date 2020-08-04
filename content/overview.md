@@ -22,3 +22,5 @@ Our research team used an interdisciplinary approach to combine datasets of publ
 [4]Gundersen, C., et al. "Map the meal gap 2018: A report on county and congressional district food insecurity and county food cost in the United States in 2016." Feeding America (2018).
 
 [5]Mulaik, S. A. (2009). Foundations of factor analysis. CRC press.  
+
+[6]OECD Organisation for Economic Co-operation and Develop (2008). Handbook on Constructing Composite Indicators: Methodology and User Guide. OECD Publishing.

@@ -59,7 +59,9 @@ The following figures show the food access index variables where the underlying 
 
 There is less access in rural and suburban areas compared to urban areas. This is especially the case for food pantries. It is important to remember that access is only one aspects that drives food insecurity. In the final part of this project, we combine both food access and social and economic indicators to create a composite index of food insecurity.
 
-References:
+<br>
+
+#### References:
 Mayer, V. L., Hillier, A., Bachhuber, M. A., & Long, J. A. (2014). Food insecurity, neighborhood food access, and food assistance in Philadelphia. Journal of Urban Health, 91(6), 1087-1097.
 
 

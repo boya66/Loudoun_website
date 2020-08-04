@@ -113,9 +113,11 @@ ggplot(map_and_data) +
 
 The SEVI is shown in Figure 1 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudon County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may need targeted assistance.
 
+<br>
 
-References:
+#### References:
 Eisenmann, J. C., Gundersen, C., Lohman, B. J., Garasky, S., & Stewart, S. D. (2011). Is food insecurity related to overweight and obesity in children and adolescents? A summary of studies, 1995–2009. Obesity Reviews, 12(5), 73-83.
+
 Ibok, O. W., Osbahr, H., & Srinivasan, C. (2019). Advancing a new index for measuring household vulnerability to food insecurity. Food Policy, 84, 10-20. 
 
 CDC Social Vulnerability Index. Retrieved from: https://svi.cdc.gov/
