@@ -11,8 +11,12 @@ Food insecurity may also be affected by food accessibility. Those with access to
 The regional accessibility indicator is created by examining the main sources of food supply within a specified radius. The three types of food sources analyzed are food retailers, farmers’ markets, and food pantries. To calculate a regional accessibility indicator at the census tract level, we first determined the location within each census tract that we used to measure the distance to food retailers. Instead of using the geographic center of each census tract, we used the geometric center weighted by population density. This is especially important for large census tracts where the bulk of the population may reside in only a small part of the tract. The population weighted centroid was constructed using the Centers of Population for the 2010 Census retrieved from  [here](https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html).
 
 Only food supply sources within a certain radius of the center of the census tract were taken in constructing the food access indices. Households are unlikely to travel beyond a certain distance to food retailers or they may not have access to adequate transportation. The access index was created as 
+follows:
 
-Regional Food Accessibility = $\frac{\sum_{}^{} \frac{1}{distance}}{population}$
+$$\mathcal{A_i} = \frac{\sum\limits_{j=1}^n \frac{1}{dist_{i}}}{pop_i}$$
+
+
+where $A_{i}$ is accessibility index for each census tract $i$, $dist_{i,j}$ is the distance from the population weighted centroid for each census tract $i$ to each food supply source $j$, and $pop_i$ is the population for each census tract $i$.
 
 The access index variable is essentially a count of food retailers within the specified radius weighted by the inverse distance to each retailer. Retailers that are closer to the population center result in a higher access index. The variable is also weighted by population as we ultimately wish to measure food access per person. This population weighting accounts for major differences in rural, suburban, and urban areas.
 <center>

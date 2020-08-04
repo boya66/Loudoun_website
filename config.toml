@@ -13,7 +13,7 @@ publishDir = "docs"
 
 [params]
     author = "UVA Biocomplexity Institute"
-    description = "2020 DSPG VT Loudoun"
+    description = "2020 DSPG VT Loudoun County"
     logo = "favicon/uva-dspg-logo.jpg"
     githubUsername = "boya66"
     accent = "#232D4B" # dark colors do best

@@ -47,4 +47,6 @@ The food insecurity composite map is similar to other access and social and econ
 References:
 Mulaik, S. A. (2009). Foundations of factor analysis. CRC press.
 
+OECD Organisation for Economic Co-operation and Develop (2008). Handbook on Constructing Composite Indicators: Methodology and User Guide. OECD Publishing.
+
 
