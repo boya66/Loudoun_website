@@ -27,7 +27,7 @@ Recognizing that food insecurity is not bound by county or city, we constructed 
 The social and economic vulnerability index (SEVI) is constructed using census tract-level data on poverty rate, ethnicity, spoken language, household composition, and crowdedness, physical and mental disabilities, housing type, and access to private/public transportation. All of these factors can affect the ability of households to obtain healthy, nutritious foods. It is important to note that food insecurity can and often does, go hand in hand with obesity (Eisenmann, Gunersen, Lohman, Garasky, and Stewart, 2011).
 
 
-```{r, include=FALSE, echo = TRUE, eval = FALSE}
+```{r, include=FALSE, echo = TRUE, eval = TRUE}
 library(rgdal)
 library(tidyverse)
 library(sf)
@@ -100,7 +100,7 @@ loudoun_outline<-get_acs(geography = "county",
   select(COUNTYFP,geometry)
 
 ```
-```{r plot, echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center", eval=FALSE}
+```{r plot, echo=FALSE, fig.height = 6, fig.width = 10, fig.align = "center", eval=TRUE}
 ggplot(map_and_data) + 
   geom_sf(aes(fill= RPL_THEMES)) +
   geom_sf(data= va_sf, fill="transparent", color="black", size=.5) +
@@ -109,7 +109,7 @@ ggplot(map_and_data) +
   scale_fill_viridis_c() + scale_color_viridis_c() +
   theme(legend.title = element_blank()) 
 ```
-![](/knitted_demographics_Loudoun_files/figure-html/plot-1.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"}
+<!-- ![](/knitted_demographics_Loudoun_files/figure-html/plot-1.png){style="width:75%; display: block; margin-left: auto; margin-right: auto;"} -->
 
 The SEVI is shown in Figure 1 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudoun County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may need targeted assistance.
 
