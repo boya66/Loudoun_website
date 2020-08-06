@@ -7,9 +7,7 @@ draft: false
 output: html_document
 ---
 
-Loudoun County is part of the northern Virginia region. Along with Loudoun County, NOVA also consists of:
-
-The NoVA area is composed by:
+Loudoun County is part of the northern Virginia region. Along with Loudoun County, the NoVA area is composed of:
 
 * City of Alexandria
 + Arlington County

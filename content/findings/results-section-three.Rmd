@@ -14,8 +14,8 @@ The approach for constructing the composite index is principal component or fact
 
 ##### Food access indicators:
 -	Food retailer access indicators
--	Farmer's market acess indicators
--	Food pantry acess indicators
+-	Farmer's market access indicators
+-	Food pantry access indicators
 
 ##### Summary demographic variables from CDC SVI 2018 Data Dictionary:
 - Socioeconomic index
@@ -24,11 +24,11 @@ The approach for constructing the composite index is principal component or fact
 - Housing Type & Transportation index
 -	Overall social vulnerability index
 
-We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had 44.7%, 26.7%, and 7.7% of the overall variation respectively and cumulatively 79% of overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the proportion of variance explained as our weight. $F$ denotes the composite index. $X$ denotes the standardized design matrix. $L$ denotes the matrix of variable loadings. $w$ denotes the proportion of variance explained. Then the composite is constructed according to the following formula:
+We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had 44.7%, 26.7%, and 7.7% of the overall variation respectively and cumulatively 79% of the overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the proportion of variance explained as our weight. $F$ denotes the composite index. $X$ denotes the standardized design matrix. $L$ denotes the matrix of variable loadings. $w$ denotes the proportion of variance explained. Then the composite is constructed according to the following formula:
 
 $$F_{n \times 1} = X_{n\times p} \cdot L_{k \times p} \cdot w_{k \times 1} \\ \text{ } $$ 
 
-The heatmap of the composite food insecuriy index is shown below:
+The heatmap of the composite food insecurity index is shown below:
 ```{r setup, include=FALSE}
 library(knitr)
 library(ggplot2)
@@ -41,7 +41,7 @@ library(grid)
 
 ### Conclusions
 
-The food insecurity composite map is similar to other access and social and economic indicator maps generated in parts 1 and 2 of this project. We find that the areas with the highest composite score tend to be rural census tracts. However, there can be substantial variation within urban areas. For instance, some census tracts in Leesburg and Ashburn score higher in terms of food insecurity compared to their immediate neighbors. The ability of a Loudoun County food hub to address food insecurity in these areas could ultimately rest on resource allocation that is targeted according to carefully designed insecurity measures. Next steps in this project would be to consider different approaches to index construction and robustness to this choice and to take into consideration the types of products that Loudoun County agriculture could deliver to a food hub.
+The food insecurity composite map is similar to other access and social and economic indicator maps generated in parts 1 and 2 of this project. We find that the areas with the highest composite score tend to be rural census tracts. However, there can be substantial variation within urban areas. For instance, some census tracts in Leesburg and Ashburn score higher in terms of food insecurity compared to their immediate neighbors. The ability of a Loudoun County food hub to address food insecurity in these areas could ultimately rest on resource allocation that is targeted according to carefully designed insecurity measures. The next steps in this project would be to consider different approaches to index construction and robustness to this choice and to take into consideration the types of products that Loudoun County agriculture could deliver to a food hub.
 
 <br>
 

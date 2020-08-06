@@ -16,7 +16,7 @@ follows:
 $$\mathcal{A_i} = \frac{\sum\limits_{j=1}^n \frac{1}{dist_{ij}}}{pop_i}$$
 
 
-where $A_{i}$ is accessibility index for each census tract $i$, $dist_{ij}$ is the distance from the population weighted centroid for each census tract $i$ to each food supply source $j$, and $pop_i$ is the population for each census tract $i$.
+where $A_{i}$ is an accessibility index for each census tract $i$, $dist_{ij}$ is the distance from the population weighted centroid for each census tract $i$ to each food supply source $j$, and $pop_i$ is the population for each census tract $i$.
 
 The access index variable is essentially a count of food retailers within the specified radius weighted by the inverse distance to each retailer. Retailers that are closer to the population center result in a higher access index. The variable is also weighted by population as we ultimately wish to measure food access per person. This population weighting accounts for major differences in rural, suburban, and urban areas.
 <center>
@@ -57,7 +57,7 @@ The following figures show the food access index variables where the underlying 
 
 
 
-There is less access in rural and suburban areas compared to urban areas. This is especially the case for food pantries. It is important to remember that access is only one aspects that drives food insecurity. In the final part of this project, we combine both food access and social and economic indicators to create a composite index of food insecurity.
+There is less access in rural and suburban areas compared to urban areas. This is especially the case for food pantries. It is important to remember that access is only one aspect that drives food insecurity. In the final part of this project, we combine both food access and social and economic indicators to create a composite index of food insecurity.
 
 <br>
 
